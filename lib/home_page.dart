@@ -1,8 +1,8 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iconly/iconly.dart';
 import 'package:project1/core/cubit/app_cubit.dart';
+import 'package:project1/search.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -25,9 +25,12 @@ class _HomePageState extends State<HomePage> {
             actions: [
               IconButton(
                   onPressed: () async {
-                    await FirebaseAuth.instance.signOut();
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const SearchScreen()));
                   },
-                  icon: const Icon(Icons.exit_to_app)),
+                  icon: const Icon(IconlyBroken.search)),
             ],
             //AppBar
           ),
@@ -44,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                 BottomNavigationBarItem(
                     icon: Icon(IconlyBroken.buy), label: "*"),
                 BottomNavigationBarItem(
-                    icon: Icon(IconlyBroken.profile), label: "*"),
+                    icon: Icon(IconlyBroken.heart), label: "*"),
               ]),
           body:
               AppCubit.get(context).screen[AppCubit.get(context).currentIndex],

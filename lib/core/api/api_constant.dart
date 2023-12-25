@@ -1,1 +1,3 @@
-class ApiConstant {}
+class ApiConstant {
+  static String userId = '';
+}

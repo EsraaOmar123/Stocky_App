@@ -37,3 +37,13 @@ class DeleteDataSuccessState extends AppStates {}
 class DeleteDataErrorState extends AppStates {}
 
 // get data from firebase
+
+class GetDataErrorState extends AppStates {}
+
+class GetDataSuccessState extends AppStates {}
+
+class LoadingDataState extends AppStates {}
+
+class SearchError extends AppStates {}
+
+class SearchSuccess extends AppStates {}

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/components/app_colors.dart';
+
 class CustomRichText extends StatelessWidget {
   const CustomRichText({
     super.key,
@@ -15,16 +17,16 @@ class CustomRichText extends StatelessWidget {
       text: TextSpan(
           text: textPartOne,
           style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                fontSize: 35,
                 fontWeight: FontWeight.bold,
-                fontSize: 30,
               ),
           children: [
             TextSpan(
               text: textPartTwo,
               style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                    fontSize: 35,
                     fontWeight: FontWeight.bold,
-                    color: Colors.brown,
-                    fontSize: 30,
+                    color: const Color(AppColors.kPrimaryColor),
                   ),
             )
           ]),

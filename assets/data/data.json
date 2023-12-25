@@ -1,0 +1,305 @@
+{
+  "data": [
+    {
+      "image":"assets/images/70jacket.jpeg",
+      "title": "70Jacket",
+      "size": "L",
+      "subtitle": "Description 1",
+      "price": " 5 $"
+    },
+    {
+      "image": "assets/images/bag.jpeg",
+      "title": "Bag",
+      "size": "",
+      "subtitle": "Description 2",
+      "price": " 13 $"
+    },
+    {
+      "image": "assets/images/belts.jpeg",
+      "title": "Belts",
+      "size": "",
+      "subtitle": "Description 3",
+      "price": " 50 $"
+    },
+    {
+      "image": "assets/images/bracelete.jpeg",
+      "title": "Bracelete",
+      "size": "",
+      "subtitle": "Description 4",
+      "price": " 150 $"
+    },
+    {
+      "image": "assets/images/brownbelt.jpeg",
+      "title": "BrownBelt",
+      "size": "",
+      "subtitle": "Description 5",
+      "price": "15 $"
+    },
+    {
+      "image": "assets/images/camelbelt.jpeg",
+      "title": "camelbelt",
+      "size": "",
+      "subtitle": "Description 6",
+      "price": "20 $"
+    },
+    {
+      "image": "assets/images/casualbag.jpeg",
+      "title": "casualbag",
+      "size": "",
+      "subtitle": "Description 7",
+      "price": "25 $"
+    },
+    {
+      "image": "assets/images/classicbag.jpeg",
+      "title": "classicbag",
+      "size": "",
+      "subtitle": "Description 8",
+      "price": "35 $"
+    },
+    {
+      "image": "assets/images/colorfulbag.jpeg",
+      "title": "colorfulbag",
+      "size": "",
+      "subtitle": "Description 9",
+      "price": "30 $"
+    },
+    {
+      "image": "assets/images/denmbag.jpeg",
+      "title": "denmbag",
+      "size": "",
+      "subtitle": "Description 10",
+      "price": "50 $"
+    },
+    {
+      "image": "assets/images/dress.jpeg",
+      "title": "dress",
+      "size": "M",
+      "subtitle": "Description 11",
+      "price": "175 $"
+    },
+    {
+      "image": "assets/images/glasses.jpeg",
+      "title": "glasses",
+      "size": "",
+      "subtitle": "Description 12",
+      "price": "250 $"
+    },
+    {
+      "image": "assets/images/greenbag.jpeg",
+      "title": "greenbag",
+      "size": "",
+      "subtitle": "Description 13",
+      "price": "40 $"
+    },
+    {
+      "image": "assets/images/greensweater.jpeg",
+      "title": "greensweater",
+      "size": "XL",
+      "subtitle": "Description 14",
+      "price": "75 $"
+    },
+    {
+      "image": "assets/images/greybag.jpeg",
+      "title": "greybag",
+      "size": "",
+      "subtitle": "Description 15",
+      "price": "23 $"
+    },
+    {
+      "image": "assets/images/heartnecklace.jpeg",
+      "title": "heartnecklace",
+      "size": "",
+      "subtitle": "Description 16",
+      "price": "50 $"
+    },
+    {
+      "image": "assets/images/hoodie.jpg",
+      "title": "hoodie",
+      "size": "L",
+      "subtitle": "Description 17",
+      "price": "32 $"
+    },
+    {
+      "image": "assets/images/jacket.jpg",
+      "title": "jacket",
+      "size": "2XL",
+      "subtitle": "Description 18",
+      "price": "100 $"
+    },
+    {
+      "image": "assets/images/jeans.jpeg",
+      "title": "jeans",
+      "size": "M",
+      "subtitle": "Description 19",
+      "price": "40 $"
+    },
+    {
+      "image": "assets/images/jeansbag.jpeg",
+      "title": "jeansbag",
+      "size": "",
+      "subtitle": "Description 20",
+      "price": "35 $"
+    },
+    {
+      "image": "assets/images/leatherpants.jpeg",
+      "title": "leatherpants",
+      "size": "XL",
+      "subtitle": "Description 21",
+      "price": "60 $"
+    },
+    {
+      "image": "assets/images/longskirt.jpeg",
+      "title": "longskirt",
+      "size": "XS",
+      "subtitle": "Description 22",
+      "price": "45 $"
+    },
+
+
+
+
+
+
+    {
+      "image": "assets/images/necklace.jpeg",
+      "title": "necklace",
+      "size": "",
+      "subtitle": "Description 23",
+      "price": "5 $"
+    },
+    {
+      "image": "assets/images/oversizedhoodie.jpeg",
+      "title": "oversizedhoodie",
+      "size": "free size",
+      "subtitle": "Description 24",
+      "price": "15 $"
+    },
+    {
+      "image": "assets/images/pants.jpg",
+      "title": "pants",
+      "size": "S",
+      "subtitle": "Description 25",
+      "price": "25 $"
+    },
+    {
+      "image": "assets/images/preciousnecklace.jpeg",
+      "title": "preciousnecklace",
+      "size": "",
+      "subtitle": "Description 26",
+      "price": "35 $"
+    },
+    {
+      "image": "assets/images/pullover.jpeg",
+      "title": "pullover",
+      "size": "Free Size",
+      "subtitle": "Description 27",
+      "price": "19 $"
+    },
+    {
+      "image": "assets/images/purse.jpeg",
+      "title": "purse",
+      "size": "",
+      "subtitle": "Description 28",
+      "price": "20 $"
+    },
+    {
+      "image": "assets/images/redbag.jpeg",
+      "title": "redbag",
+      "size": "",
+      "subtitle": "Description 29",
+      "price": "25 $"
+    },
+    {
+      "image": "assets/images/scarf.jpeg",
+      "title": "scarf",
+      "size": "",
+      "subtitle": "Description 30",
+      "price": "15 $"
+    },
+    {
+      "image": "assets/images/Set.jpeg",
+      "title": "Set",
+      "size": "XL",
+      "subtitle": "Description 31",
+      "price": "40 $"
+    },
+    {
+      "image": "assets/images/shoes.jpg",
+      "title": "shoes",
+      "size": "39",
+      "subtitle": "Description 32",
+      "price": "35 $"
+    },
+    {
+      "image": "assets/images/smallbag1.jpeg",
+      "title": "smallbag1",
+      "size": "",
+      "subtitle": "Description 33",
+      "price": "24 $"
+    },
+    {
+      "image": "assets/images/smallbag2.jpeg",
+      "title": "smallbag2",
+      "size": "",
+      "subtitle": "Description 34",
+      "price": "17 $"
+    },
+    {
+      "image": "assets/images/sneakers.jpeg",
+      "title": "sneakers",
+      "size": "40",
+      "subtitle": "Description 35",
+      "price": "42 $"
+    },
+    {
+      "image": "assets/images/stonednecklace.jpeg",
+      "title": "stonednecklace",
+      "size": "",
+      "subtitle": "Description 36",
+      "price": "270 $"
+    },
+    {
+      "image": "assets/images/strippedpullover.jpeg",
+      "title": "strippedpullover",
+      "size": "2XL",
+      "subtitle": "Description 37",
+      "price": "18 $"
+    },
+    {
+      "image": "assets/images/sweater.jpeg",
+      "title": "sweater",
+      "size": "L",
+      "subtitle": "Description 38",
+      "price": "22 $"
+    },
+    {
+      "image": "assets/images/sweatshirt.jpeg",
+      "title": "SweatShirt",
+      "size": "M",
+      "subtitle": "Description 39",
+      "price": "15 $"
+    },
+    {
+      "image": "assets/images/top.jpeg",
+      "title": "top",
+      "size": "XS",
+      "subtitle": "Description 40",
+      "price": "18 $"
+    },
+
+    {
+      "image": "assets/images/totebag.jpeg",
+      "title": "totebag",
+      "size": "",
+      "subtitle": "Description 41",
+      "price": "45 $"
+    },
+    {
+      "image": "assets/images/vest.jpeg",
+      "title": "Vest",
+      "size": "M",
+      "subtitle": "Description 42",
+      "price": "32 $"
+    }
+  ]
+}

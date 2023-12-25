@@ -4,6 +4,7 @@ import 'package:gap/gap.dart';
 import '../../../../../../core/components/custom_text_form_feild.dart';
 import '../../../core/components/app_colors.dart';
 
+// ignore: must_be_immutable
 class CustomTwoTextFromField extends StatelessWidget {
   CustomTwoTextFromField({
     super.key,
@@ -44,7 +45,6 @@ class CustomTwoTextFromField extends StatelessWidget {
             border: InputBorder.none,
             label: label1,
             type: TextInputType.emailAddress,
-            validate: (value) {},
             prefixIcon: prefixIcon1,
             edgeInsetsGeometry: const EdgeInsets.symmetric(
               vertical: 15,
@@ -64,7 +64,6 @@ class CustomTwoTextFromField extends StatelessWidget {
             maxLine: 1,
             type: TextInputType.visiblePassword,
             controller: controller2,
-            validate: (value) {},
             border: InputBorder.none,
             label: label2,
             prefixIcon: prefixIcon2,

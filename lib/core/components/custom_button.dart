@@ -1,51 +1,38 @@
 import 'package:flutter/material.dart';
+import 'package:project1/core/components/app_colors.dart';
 
-class CustomButton extends StatelessWidget {
-  double? height;
-  double? width;
-  int? color;
-  double? radius;
-  final VoidCallback onPressed;
-  final String text;
-  double? fontSize;
-  int? textColor;
-  double? horizontal;
-  double? vertical;
-
-  CustomButton({
+class CustomActionButton extends StatelessWidget {
+  const CustomActionButton({
     super.key,
-    required this.onPressed,
-    required this.text,
-    this.radius,
-    this.height,
-    this.width,
-    this.fontSize,
-    this.textColor,
-    this.horizontal,
-    this.vertical,
-    this.color,
+    required this.buttonText,
+    this.onTap,
+    this.backgroundColor = const Color(AppColors.kPrimaryColor),
+    this.borderColor = Colors.transparent,
+    this.fontColor = Colors.white,
+    this.height = 67,
   });
+  final void Function()? onTap;
+  final String buttonText;
+  final Color backgroundColor;
+  final Color borderColor;
+  final Color fontColor;
+  final double height;
+  @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return Container(
-      margin:
-          EdgeInsets.symmetric(vertical: vertical!, horizontal: horizontal!),
-      width: width,
-      height: height,
-      decoration: BoxDecoration(
-        color: Color(color!),
-        borderRadius: BorderRadius.circular(radius!),
-      ),
-      child: TextButton(
-        onPressed: onPressed,
-        style: Theme.of(context).textButtonTheme.style,
-        child: Text(
-          text,
-          style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                fontSize: fontSize,
-                color: Color(textColor!),
-                fontWeight: FontWeight.w500,
-              ),
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: double.infinity,
+        height: height,
+        decoration: BoxDecoration(
+            color: backgroundColor,
+            borderRadius: BorderRadius.circular(19),
+            border: Border.all(color: borderColor)),
+        child: Center(
+          child: Text(
+            buttonText,
+            style: TextStyle(fontSize: 18, color: fontColor),
+          ),
         ),
       ),
     );

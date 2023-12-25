@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "616204766401",
-    "project_id": "stockyapp-ec51a",
-    "storage_bucket": "stockyapp-ec51a.appspot.com"
+    "project_number": "790343702945",
+    "project_id": "stocky-3a009",
+    "storage_bucket": "stocky-3a009.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:616204766401:android:06cf4a6100c5a80f4e1840",
+        "mobilesdk_app_id": "1:790343702945:android:a6481bc79474e75fab53e0",
         "android_client_info": {
-          "package_name": "com.example.project1"
+          "package_name": "com.example.Stocky"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBo9e674l7JMBTmTJ_Jbelkwz2VrHEf4IA"
+          "current_key": "AIzaSyAenxc0o23UPuXwYXDnzphUKAysCQTX1Tk"
         }
       ],
       "services": {
