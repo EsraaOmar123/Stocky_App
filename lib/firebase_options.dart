@@ -44,7 +44,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBg4CM8h9EEPqY8zygGJORGJIDcoOsE-2nOE',
+    apiKey: 'AIzaSyBg4CM8h9EEPqY8zygLRGJODcoOsE-2nOE',
     appId: '1:790343702945:web:1ebb2bd2978615e8ab53e0',
     messagingSenderId: '790343702945',
     projectId: 'stocky-3a009',
@@ -67,6 +67,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '790343702945',
     projectId: 'stocky-3a009',
     storageBucket: 'stocky-3a009.appspot.com',
+    androidClientId: '790343702945-grkq3gpnpgma88v1bhftb01m9ldbummg.apps.googleusercontent.com',
+    iosClientId: '790343702945-n1vpgs98lluv255obje8bgc45b98nl0j.apps.googleusercontent.com',
     iosBundleId: 'com.example.project1',
   );
 
@@ -76,6 +78,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '790343702945',
     projectId: 'stocky-3a009',
     storageBucket: 'stocky-3a009.appspot.com',
+    androidClientId: '790343702945-grkq3gpnpgma88v1bhftb01m9ldbummg.apps.googleusercontent.com',
+    iosClientId: '790343702945-psea12s3o2ctkpmdf93fois2mqdh17pr.apps.googleusercontent.com',
     iosBundleId: 'com.example.project1.RunnerTests',
   );
 }
