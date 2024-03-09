@@ -3,8 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:project1/core/utils/api_constant.dart';
-import 'package:project1/features/home/presentation/manager/app%20cubit/app_cubit.dart';
-import 'package:project1/blocObserver.dart';
+import 'package:project1/my_bloc_observer.dart';
 import 'package:project1/core/utils/themes.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:project1/firebase_options.dart';
@@ -40,7 +39,7 @@ class MyApp extends StatelessWidget {
     return SafeArea(
       child: MultiBlocProvider(
         providers: [
-          BlocProvider(create: (context) => AppCubit()..createDataBase()),
+          //BlocProvider(create: (context) => AppCubit()..createDataBase()),
           BlocProvider(create: (context) => AuthCubit()),
           BlocProvider(
               create: (context) => GetUserDetailsCubit(AccountRepoImp())),

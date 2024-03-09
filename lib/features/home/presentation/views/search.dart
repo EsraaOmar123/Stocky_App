@@ -6,6 +6,8 @@ import 'package:project1/core/widgets/custom_text_form_feild.dart';
 import 'package:project1/features/home/presentation/manager/app%20cubit/app_cubit.dart';
 import 'package:project1/features/home/presentation/views/details.dart';
 
+import '../../../../core/utils/assets.dart';
+
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
 
@@ -32,7 +34,6 @@ class _SearchScreenState extends State<SearchScreen> {
                   maxLine: 1,
                   controller: searchController,
                   onChanged: (value) {
-                    AppCubit.get(context).search(key: value.toString());
                     return null;
                   },
                   border: OutlineInputBorder(
@@ -50,9 +51,8 @@ class _SearchScreenState extends State<SearchScreen> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => ItemsDetails(
-                                            productData: AppCubit.get(context)
-                                                .searchModels[index])));
+                                        builder: (context) =>
+                                            const ItemsDetails()));
                               },
                               child: Row(
                                 children: [
@@ -61,9 +61,9 @@ class _SearchScreenState extends State<SearchScreen> {
                                     height: 150,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(15),
-                                      image: DecorationImage(
+                                      image: const DecorationImage(
                                           image: AssetImage(
-                                        '${AppCubit.get(context).searchModels[index].image}',
+                                        Assets.imagesSweatshirt,
                                       )),
                                     ),
                                   ),
@@ -75,21 +75,21 @@ class _SearchScreenState extends State<SearchScreen> {
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Text(
-                                        '${AppCubit.get(context).searchModels[index].title}',
+                                        'sweatshirt',
                                         style: Theme.of(context)
                                             .textTheme
                                             .bodyMedium!
                                             .copyWith(fontSize: 19),
                                       ),
                                       Text(
-                                        '${AppCubit.get(context).searchModels[index].subtitle}',
+                                        'nice sweatshirt with a good quality',
                                         style: Theme.of(context)
                                             .textTheme
                                             .bodyMedium!
                                             .copyWith(color: Colors.grey),
                                       ),
                                       Text(
-                                        '${AppCubit.get(context).searchModels[index].price}',
+                                        45.toString(),
                                         style: Theme.of(context)
                                             .textTheme
                                             .bodyMedium!
@@ -101,8 +101,7 @@ class _SearchScreenState extends State<SearchScreen> {
                               ),
                             ),
                             separatorBuilder: (context, index) => const Gap(20),
-                            itemCount:
-                                AppCubit.get(context).searchModels.length,
+                            itemCount: 10,
                           ),
                         ),
                     fallback: (context) => const SizedBox(

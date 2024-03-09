@@ -5,6 +5,7 @@ import 'package:iconly/iconly.dart';
 import 'package:project1/core/widgets/flutter_toast.dart';
 import 'package:project1/features/home/presentation/manager/app%20cubit/app_cubit.dart';
 
+import '../../../../core/utils/assets.dart';
 import 'details.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -75,9 +76,9 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               ConditionalBuilder(
-                  condition: AppCubit.get(context).allProducts.isNotEmpty,
+                  condition: true,
                   builder: (context) => GridView.builder(
-                        itemCount: AppCubit.get(context).allProducts.length,
+                        itemCount: 4,
                         physics: const NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
                         gridDelegate:
@@ -91,9 +92,7 @@ class HomeScreen extends StatelessWidget {
                             onTap: () {
                               Navigator.of(context).push(
                                 MaterialPageRoute(
-                                    builder: (context) => ItemsDetails(
-                                        productData: AppCubit.get(context)
-                                            .allProducts[index])),
+                                    builder: (context) => const ItemsDetails()),
                               );
                             },
                             child: SizedBox(
@@ -107,9 +106,9 @@ class HomeScreen extends StatelessWidget {
                                     Expanded(
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             image: AssetImage(
-                                                '${AppCubit.get(context).allProducts[index].image}'),
+                                                Assets.imagesSweatshirt),
                                             fit: BoxFit.fill,
                                           ),
                                           borderRadius:
@@ -118,41 +117,28 @@ class HomeScreen extends StatelessWidget {
                                         width: 300,
                                       ),
                                     ),
-                                    Text(
-                                      '${AppCubit.get(context).allProducts[index].title}',
-                                      style: const TextStyle(
+                                    const Text(
+                                      'sweatshirt',
+                                      style: TextStyle(
                                           fontSize: 14,
                                           fontWeight: FontWeight.bold),
                                     ),
-                                    Text(
-                                      '${AppCubit.get(context).allProducts[index].subtitle}',
-                                      style: const TextStyle(
+                                    const Text(
+                                      'sweatshirt with a good quality material and price is affordable for you',
+                                      style: TextStyle(
                                           fontSize: 14, color: Colors.grey),
                                     ),
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceAround,
                                       children: [
-                                        Text(
-                                            '${AppCubit.get(context).allProducts[index].price}',
+                                        Text(45.toString(),
                                             style: const TextStyle(
                                                 fontSize: 14,
                                                 color: Colors.orange,
                                                 fontWeight: FontWeight.bold)),
                                         IconButton(
-                                          onPressed: () {
-                                            AppCubit.get(context).insertIntoDataBase(
-                                                image:
-                                                    '${AppCubit.get(context).allProducts[index].image}',
-                                                title:
-                                                    '${AppCubit.get(context).allProducts[index].title}',
-                                                price:
-                                                    '${AppCubit.get(context).allProducts[index].price}',
-                                                sizes: '35 36 37 38 ',
-                                                description:
-                                                    '${AppCubit.get(context).allProducts[index].subtitle}',
-                                                table: 'fav');
-                                          },
+                                          onPressed: () {},
                                           icon: const Icon(IconlyBroken.heart),
                                         ),
                                       ],

@@ -1,4 +1,4 @@
-import 'package:sqflite/sqflite.dart';
+/*import 'package:sqflite/sqflite.dart';
 
 class DataBase {
   late Database database;
@@ -82,3 +82,4 @@ class DataBase {
         .catchError((error) {});
   }
 }
+*/
