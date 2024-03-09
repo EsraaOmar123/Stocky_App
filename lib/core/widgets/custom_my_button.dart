@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  double? height;
-  double? width;
-  int? color;
-  double? radius;
+  final double? height;
+  final double? width;
+  final int? color;
+  final double? radius;
   final VoidCallback onPressed;
   final String text;
-  double? fontSize;
-  int? textColor;
-  double? horizontal;
-  double? vertical;
+  final double? fontSize;
+  final int? textColor;
+  final double? horizontal;
+  final double? vertical;
 
-  CustomButton({
+  const CustomButton({
     super.key,
     required this.onPressed,
     required this.text,
@@ -25,8 +25,8 @@ class CustomButton extends StatelessWidget {
     this.vertical,
     this.color,
   });
+  @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Container(
       margin:
           EdgeInsets.symmetric(vertical: vertical!, horizontal: horizontal!),

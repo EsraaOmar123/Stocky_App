@@ -1,16 +1,9 @@
-import 'dart:convert';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:project1/features/home/presentation/views/cart.dart';
 import 'package:project1/features/home/presentation/views/fav_screen.dart';
 import 'package:project1/features/home/presentation/views/home.dart';
 import 'package:project1/features/profile/presentation/views/account_view.dart';
-import 'package:sqflite/sqflite.dart';
-
-import '../../../../../core/utils/assets.dart';
-import '../../../data/models/product_model.dart';
-
 part 'app_state.dart';
 
 class AppCubit extends Cubit<AppStates> {
@@ -29,7 +22,7 @@ class AppCubit extends Cubit<AppStates> {
     AccountView()
   ];
 
-  List<ProductModel> data = [];
+  /*List<ProductModel> data = [];
 
   List<ProductModel> searchItems(String searchTerm) {
     return data
@@ -167,5 +160,5 @@ class AppCubit extends Cubit<AppStates> {
     }).catchError((error) {
       emit(DeleteDataErrorState());
     });
-  }
+  }*/
 }

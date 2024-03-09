@@ -1,42 +1,41 @@
 import 'package:flutter/material.dart';
-import 'package:project1/features/home/presentation/manager/app%20cubit/app_cubit.dart';
-import 'package:project1/features/home/data/models/product_model.dart';
+import '../../../../core/utils/assets.dart';
 
 class ItemsDetails extends StatelessWidget {
-  final ProductModel productData;
-  const ItemsDetails({super.key, required this.productData});
+  const ItemsDetails({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('${productData.title}'),
+        title: const Text('sweatshirt'),
       ),
       body: Column(
         children: [
           Image.asset(
-            '${productData.image}',
+            Assets.imagesSweatshirt,
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height / 2.5,
             fit: BoxFit.fill,
           ),
-          Text(
-            '${productData.title}',
+          const Text(
+            'sweatshirt',
             textAlign: TextAlign.center,
-            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
           ),
           Container(
               margin: const EdgeInsets.only(top: 10),
               child: Text(
-                '${productData.subtitle}',
+                'nice sweatshirt with a good quality ',
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.grey[500]),
               )),
           Container(
               margin: const EdgeInsets.only(top: 10),
               child: Text(
-                '${productData.price}',
+                45.toString(),
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                     color: Colors.orange, fontWeight: FontWeight.bold),
@@ -59,16 +58,7 @@ class ItemsDetails extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 15),
               color: Colors.black,
               textColor: Colors.white,
-              onPressed: () {
-                AppCubit.get(context).insertIntoDataBase(
-                  image: '${productData.image}',
-                  title: '${productData.title}',
-                  price: '${productData.price}',
-                  sizes: '${productData.size}',
-                  description: '${productData.subtitle}',
-                  table: 'cart',
-                );
-              },
+              onPressed: () {},
               child: const Text("Add To Cart"),
             ),
           )

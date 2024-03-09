@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  CustomAppBar({
+  const CustomAppBar({
     super.key,
     this.title,
     this.leading,
     this.actions,
   });
 
-  String? title;
-  List<Widget>? actions;
-  Widget? leading;
+  final String? title;
+  final List<Widget>? actions;
+  final Widget? leading;
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +22,5 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => preferredSize.flipped;
 }
