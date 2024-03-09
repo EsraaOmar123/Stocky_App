@@ -14,10 +14,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<AppCubit, AppStates>(
-      listener: (context, state) {
-        // TODO: implement listener
-      },
+    return BlocBuilder<AppCubit, AppStates>(
       builder: (context, state) {
         return Scaffold(
           appBar: AppBar(
