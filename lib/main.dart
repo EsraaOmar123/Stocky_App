@@ -10,6 +10,7 @@ import 'package:project1/firebase_options.dart';
 import 'core/utils/app_routes.dart';
 import 'core/utils/constants.dart';
 import 'features/authentication/presentation/manager/auth cubit/auth_cubit.dart';
+import 'features/home/presentation/manager/app cubit/app_cubit.dart';
 import 'features/profile/data/models/user details model/user_details.dart';
 import 'features/profile/data/repos/account repo/account_repo_imp.dart';
 import 'features/profile/data/repos/image repo/image_repo_imp.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
     return SafeArea(
       child: MultiBlocProvider(
         providers: [
-          //BlocProvider(create: (context) => AppCubit()..createDataBase()),
+          BlocProvider(create: (context) => AppCubit()),
           BlocProvider(create: (context) => AuthCubit()),
           BlocProvider(
               create: (context) => GetUserDetailsCubit(AccountRepoImp())),
