@@ -5,6 +5,8 @@ import 'package:project1/core/widgets/flutter_toast.dart';
 import 'package:project1/features/home/presentation/manager/app%20cubit/app_cubit.dart';
 import 'package:swipe_to/swipe_to.dart';
 
+import '../../../../core/utils/assets.dart';
+
 class FavScreen extends StatelessWidget {
   const FavScreen({super.key});
 
@@ -17,66 +19,59 @@ class FavScreen extends StatelessWidget {
               message: 'delete from fav successfully',
               state: ToastState.warning);
         }
-        // TODO: implement listener
       },
       builder: (context, state) {
-        return AppCubit.get(context).fav.isEmpty
-            ? const Center(child: Text('Fav is Empty'))
-            : ListView.separated(
-                padding: const EdgeInsets.all(15),
-                itemBuilder: (context, index) => SwipeTo(
-                  onRightSwipe: (va) {
-                    AppCubit.get(context).deleteData(
-                        id: AppCubit.get(context).fav[index]['id'],
-                        table: 'fav');
-                  },
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 150,
-                        height: 150,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          image: DecorationImage(
-                              image: AssetImage(
-                            AppCubit.get(context).fav[index]['image'],
-                          )),
-                        ),
-                      ),
-                      const Gap(15),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Text(
-                            AppCubit.get(context).fav[index]['title'],
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyMedium!
-                                .copyWith(fontSize: 19),
-                          ),
-                          Text(
-                            AppCubit.get(context).fav[index]['description'],
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyMedium!
-                                .copyWith(color: Colors.grey),
-                          ),
-                          Text(
-                            AppCubit.get(context).fav[index]['price'],
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyMedium!
-                                .copyWith(color: Colors.orange),
-                          ),
-                        ],
-                      ),
-                    ],
+        return ListView.separated(
+          padding: const EdgeInsets.all(15),
+          itemBuilder: (context, index) => SwipeTo(
+            onRightSwipe: (va) {},
+            child: Row(
+              children: [
+                Container(
+                  width: 150,
+                  height: 150,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    image: const DecorationImage(
+                        image: AssetImage(
+                      Assets.imagesSweatshirt,
+                    )),
                   ),
                 ),
-                separatorBuilder: (context, index) => const Gap(20),
-                itemCount: AppCubit.get(context).fav.length,
-              );
+                const Gap(15),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text(
+                      'sweatshirt',
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium!
+                          .copyWith(fontSize: 19),
+                    ),
+                    Text(
+                      'nice sweatshirt with a good quality ',
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium!
+                          .copyWith(color: Colors.grey),
+                    ),
+                    Text(
+                      45.toString(),
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium!
+                          .copyWith(color: Colors.orange),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          separatorBuilder: (context, index) => const Gap(20),
+          itemCount: 10,
+        );
       },
     );
   }
