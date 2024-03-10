@@ -29,7 +29,6 @@ class _HomePageState extends State<HomePage> {
                   },
                   icon: const Icon(IconlyBroken.search)),
             ],
-            //AppBar
           ),
           bottomNavigationBar: BottomNavigationBar(
               currentIndex: AppCubit.get(context).currentIndex,
