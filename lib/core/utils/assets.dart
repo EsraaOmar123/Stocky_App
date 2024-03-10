@@ -3,51 +3,5 @@ class Assets {
   Assets._();
   static const String mainLogo = 'assets/images/1k.png';
   static const String googleLogo = 'assets/images/google.png';
-  static const String dataData = 'assets/data/data.json';
-  static const String images70jacket = 'assets/images/70jacket.jpeg';
-  static const String imagesBag = 'assets/images/bag.jpeg';
-  static const String imagesBelts = 'assets/images/belts.jpeg';
-  static const String imagesBracelete = 'assets/images/bracelete.jpeg';
-  static const String imagesBrownbelt = 'assets/images/brownbelt.jpeg';
-  static const String imagesCamelbelt = 'assets/images/camelbelt.jpeg';
-  static const String imagesCasualbag = 'assets/images/casualbag.jpeg';
-  static const String imagesClassicbag = 'assets/images/classicbag.jpeg';
-  static const String imagesColorfulbag = 'assets/images/colorfulbag.jpeg';
-  static const String imagesDenmbag = 'assets/images/denmbag.jpeg';
-  static const String imagesDress = 'assets/images/dress.jpeg';
-  static const String imagesGlasses = 'assets/images/glasses.jpeg';
-  static const String imagesGreenbag = 'assets/images/greenbag.jpeg';
-  static const String imagesGreensweater = 'assets/images/greensweater.jpeg';
-  static const String imagesGreybag = 'assets/images/greybag.jpeg';
-  static const String imagesHeartnecklace = 'assets/images/heartnecklace.jpeg';
-  static const String imagesHoodie = 'assets/images/hoodie.jpg';
-  static const String imagesJacket = 'assets/images/jacket.jpg';
-  static const String imagesJeans = 'assets/images/jeans.jpeg';
-  static const String imagesJeansbag = 'assets/images/jeansbag.jpeg';
-  static const String imagesLeatherpants = 'assets/images/leatherpants.jpeg';
-  static const String imagesLongskirt = 'assets/images/longskirt.jpeg';
-  static const String imagesNecklace = 'assets/images/necklace.jpeg';
-  static const String imagesOversizedhoodie =
-      'assets/images/oversizedhoodie.jpeg';
-  static const String imagesPants = 'assets/images/pants.jpg';
-  static const String imagesPreciousnecklace =
-      'assets/images/preciousnecklace.jpeg';
-  static const String imagesPullover = 'assets/images/pullover.jpeg';
-  static const String imagesPurse = 'assets/images/purse.jpeg';
-  static const String imagesRedbag = 'assets/images/redbag.jpeg';
-  static const String imagesScarf = 'assets/images/scarf.jpeg';
-  static const String imagesSet = 'assets/images/Set.jpeg';
-  static const String imagesShoes = 'assets/images/shoes.jpg';
-  static const String imagesSmallbag1 = 'assets/images/smallbag1.jpeg';
-  static const String imagesSmallbag2 = 'assets/images/smallbag2.jpeg';
-  static const String imagesSneakers = 'assets/images/sneakers.jpeg';
-  static const String imagesStonednecklace =
-      'assets/images/stonednecklace.jpeg';
-  static const String imagesStrippedpullover =
-      'assets/images/strippedpullover.jpeg';
-  static const String imagesSweater = 'assets/images/sweater.jpeg';
   static const String imagesSweatshirt = 'assets/images/sweatshirt.jpeg';
-  static const String imagesTop = 'assets/images/top.jpeg';
-  static const String imagesTotebag = 'assets/images/totebag.jpeg';
-  static const String imagesVest = 'assets/images/vest.jpeg';
 }
