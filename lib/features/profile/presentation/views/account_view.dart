@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:project1/features/profile/data/models/user%20details%20model/user_details.dart';
 import '../../data/models/account_tile_model.dart';
-import '../manager/get user details cubit/get_user_details_cubit.dart';
 import 'widgets/account widgets/account_view_body.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class AccountView extends StatefulWidget {
   const AccountView({super.key});
@@ -39,39 +37,20 @@ class _AccountViewState extends State<AccountView> {
     AccountModel(
         title: 'About', leadingIcon: Icons.info_outlined, onTap: () {}),
   ];
-  getData() async {
-    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
-    String id = sharedPreferences.getString("id")!;
-    // ignore: use_build_context_synchronously
-    BlocProvider.of<GetUserDetailsCubit>(context).getUserDetails(id);
-  }
-
-  @override
-  void initState() {
-    getData();
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<GetUserDetailsCubit, GetUserDetailsState>(
-      builder: (context, state) {
-        if (state is GetUserDetailsSuccess) {
-          return AccountViewBody(
-            accountItems: accountItems,
-            user: state.user,
-          );
-        } else if (state is GetUserDetailsLoading) {
-          return const CircularProgressIndicator();
-        } else if (state is GetUserDetailsFailure) {
-          return Text(
-              'Failed to load best-selling products: ${state.errorMessage}');
-        } else {
-          return const SizedBox(
-            height: 20,
-          );
-        }
-      },
+    return AccountViewBody(
+      accountItems: accountItems,
+      user: UserDetailsModel(
+          email: 'eomar2057@gmail.com',
+          name: 'Esraa omar',
+          phoneNumber: '0123456789',
+          customerId: '',
+          photo:
+              'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/542px-Unknown_person.jpg',
+          token: '',
+          id: ''),
     );
   }
 }
